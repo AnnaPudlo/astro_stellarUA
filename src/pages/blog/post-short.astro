@@ -1,0 +1,125 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import DonateNow from "../../components/DonateNow.astro";
+import News from "../../components/News.astro";
+import SocialShareBtns from "../../components/SocialShareBtns.astro";
+import '../../styles/article.css';
+---
+
+<Layout>
+    <article>
+        <div class="hero">
+            <div class="container">
+                <h1 class="section__title text-center">
+                    Ukraine Crisis
+                </h1>
+                <div class="section__text text-center">
+                    <p>
+                        The war in Ukraine continues to have devastating consequences for the civilian population as humanitarian needs persist. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="article-main">
+            <div class="container">
+                <div class="rte">
+                    <h3>Ukraine crisis briefing</h3>
+                    <p>
+                        Millions of people have been uprooted from their homes
+                        in Ukraine and are in need of humanitarian assistance,
+                        in what has become the largest and fastest displacement
+                        crisis in Europe since World War II. <a
+                            href="#"
+                            target="_blank"
+                            class="gold font--700">Almost 6 million people</a
+                        > have fled to Europe as refugees, while millions more are
+                        displaced within Ukraine and in need of urgent humanitarian
+                        assistance. Many are stranded or are unable to leave Ukraine
+                        due to increasing violence, destruction of bridges and roads,
+                        and a lack of resources or information on where to find safety
+                        and accommodation.
+                    </p>
+                    <p>
+                        The crisis in Ukraine has pushed the country into the
+                        IRC's <a href="#" target="_blank">Emergency Watchlist</a
+                        > for the first time since 2017.
+                    </p>
+                    <h3>What caused the current crisis in Ukraine?</h3>
+                    <p>
+                        The conflict in Ukraine escalated into a war on 24
+                        February 2022. Bombs and shelling continue, damaging
+                        homes, hospitals, schools and other civilian
+                        infrastructure.
+                    </p>
+                    <p>
+                        Some 3.7 million people are displaced inside Ukraine,
+                        while nearly 6 million have fled to neighboring
+                        countries to seek safety.
+                    </p>
+                    <p>
+                        Ukraine, which became an independent country in 1991
+                        after the collapse of the Soviet Union, has been working
+                        to forge closer ties with the European Union and NATO,
+                        which escalated the tensions with Russia. In 2014,
+                        Russia illegally annexed the Crimean Peninsula and began
+                        backing pro-Russian separatists in parts of eastern
+                        Ukraine. Eight years of fighting have resulted in the
+                        deaths of over 3,000 people, forced more than 850,000
+                        people from their homes, and left almost 3 million in
+                        need of aid. Eight years later, the conflict escalated
+                        into a war.
+                    </p>
+                </div>
+
+                <figure>
+                    <img
+                        src="/images/articles/3.png"
+                        alt="Photo: Majdi Fathi/NurPhoto via Getty Images"
+                    />
+                    <figcaption>
+                        Photo: Majdi Fathi/NurPhoto via Getty Images
+                    </figcaption>
+                </figure>
+                <div class="rte">
+                    <p>
+                        Israeli forces began airstrikes and ground operations
+                        after Hamas and other Palestinian armed groups launched
+                        a deadly ground incursion and rocket barrage on southern
+                        Israel on October 7, 2023, killing 1,200 people and
+                        taking over 200 hostages. Israeli operations have since
+                        caused severe destruction and widespread death and
+                        displacement throughout Gaza, particularly in the north,
+                        killing over 18,000 people.
+                    </p>
+                </div>
+
+                <div class="rte article-footer">
+
+
+                    <SocialShareBtns />
+        
+                    <p class="gray"><span class="date">December 15, 2023</span> by <span class="author">Art Chernov</span></p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <DonateNow />
+    <section class="news">
+        <div class="container">
+            <h2 class="section__title text-center">Related articles</h2>
+            <div class="section__text text-center">
+                <p>
+                    Discover the latest updates and inspiring stories showcasing
+                    the positive impact of your support.
+                </p>
+            </div>
+        </div>
+
+        <div class="news-wrapper">
+            <div class="container">
+                <News />
+            </div>
+        </div>
+    </section>
+</Layout>

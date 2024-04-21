@@ -1,0 +1,128 @@
+---
+import Arrow from "./Arrow.astro";
+import ReviewCard from "./ReviewCard.astro";
+
+import "../styles/reviewsSlider.css";
+---
+
+<div class="reviews-wrapper">
+    <div class="reviews-controls container">
+        <div class="reviews-filter">
+            <button class="btn reviews-filter__btn">Refugees</button>
+            <button class="btn reviews-filter__btn">Business</button>
+            <button class="btn reviews-filter__btn">Militaries</button>
+        </div>
+        <div class="su-slider__arrows reviews-arrows">
+            <button class="btn su-slider__arrow reviews__arrow prev">
+                <Arrow />
+            </button>
+            <button class="btn su-slider__arrow reviews__arrow next">
+                <Arrow />
+            </button>
+        </div>
+    </div>
+    <div id="reviewsSlider" class="swiper">
+        <div class="swiper-wrapper">
+            <!-- {
+                data.map((card, index) => (
+                    <ReviewCard
+                        name={card.name}
+                        company={card.company}
+                        avatar={card.avatar}
+                        review={card.review}
+                        filterTag={card.filterTag}
+                    />
+                ))
+            } -->
+
+            <ReviewCard
+                name="test 1"
+                company="test 1 company"
+                avatar="/images/reviewCard/1.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="refugees"
+            />
+            <ReviewCard
+                name="test 2"
+                company="test 1 company"
+                avatar="/images/reviewCard/2.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="refugees"
+            />
+            <ReviewCard
+                name="test 3"
+                company="test 1 company"
+                avatar="/images/reviewCard/3.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="business"
+            />
+            <ReviewCard
+                name="test 4"
+                company="test 1 company"
+                avatar="/images/reviewCard/4.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="business"
+            />
+            <ReviewCard
+                name="test 5"
+                company="test 1 company"
+                avatar="/images/reviewCard/5.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="business"
+            />
+            <ReviewCard
+                name="test 6"
+                company="test 1 company"
+                avatar="/images/reviewCard/6.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="refugees"
+            />
+            <ReviewCard
+                name="test 7"
+                company="test 1 company"
+                avatar="/images/reviewCard/6.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="refugees"
+            />
+            <ReviewCard
+                name="test 8"
+                company="test 1 company"
+                avatar="/images/reviewCard/5.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="business"
+            />
+            <ReviewCard
+                name="test 9"
+                company="test 1 company"
+                avatar="/images/reviewCard/4.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="business"
+            />
+            <ReviewCard
+                name="test 10"
+                company="test 1 company"
+                avatar="/images/reviewCard/3.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="business"
+            />
+            <ReviewCard
+                name="test 11"
+                company="test 1 company"
+                avatar="/images/reviewCard/2.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="militaries"
+            />
+            <ReviewCard
+                name="test 12"
+                company="test 1 company"
+                avatar="/images/reviewCard/1.png"
+                review="Being part of this community has been a life-changing experience. The organization's efforts go beyond charity – they empower people and create lasting change."
+                filterTag="militaries"
+            />
+        </div>
+    </div>
+</div>
+
+<script>
+    import "../scripts/reviewsSlider";
+</script>
